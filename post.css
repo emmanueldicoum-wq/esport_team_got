@@ -1,0 +1,365 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CONFIGURATION GENERALE */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080b12;
+    color: white;
+}
+
+/* BARRE DE NAVIGATION */
+
+header {
+    background: #101622;
+    padding: 20px 8%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 25px;
+    color: white;
+}
+
+.logo span,
+footer span {
+    color: #168cff;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #168cff;
+}
+
+/* ACCUEIL */
+
+.hero {
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    padding: 60px 10%;
+
+    background:
+    linear-gradient(90deg, #080b12 35%, transparent),
+    linear-gradient(135deg, #102443, #080b12);
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+.subtitle {
+    color: #168cff;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+
+.hero h2 span {
+    color: #168cff;
+}
+
+.hero-content p {
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* BOUTON */
+
+.btn {
+    display: inline-block;
+    background: #168cff;
+    color: white;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: white;
+    color: #168cff;
+    transform: translateY(-3px);
+}
+
+/* PRESENTATION */
+
+.about {
+    text-align: center;
+    padding: 80px 10%;
+}
+
+.about h2,
+.players h2,
+.results h2,
+.contact h2 {
+    color: #168cff;
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+
+.about p {
+    max-width: 700px;
+    margin: auto;
+    line-height: 2;
+    color: #c4cbd5;
+}
+
+/* JOUEURS */
+
+.players {
+    padding: 80px 8%;
+    text-align: center;
+    background: #101622;
+}
+
+.player-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.player-card {
+    background: #192333;
+    width: 200px;
+    padding: 25px 15px;
+    border-radius: 10px;
+    border: 1px solid #263b57;
+    transition: 0.3s;
+}
+
+.player-card:hover {
+    transform: translateY(-10px);
+    border-color: #168cff;
+}
+
+.avatar {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background: #168cff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto 20px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.player-card h3 {
+    margin-bottom: 10px;
+}
+
+.player-card p {
+    color: #168cff;
+}
+
+/* RESULTATS */
+
+.results {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 70px;
+}
+
+.stats h3 {
+    font-size: 40px;
+    color: #168cff;
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+
+.contact {
+    padding: 80px 10%;
+    text-align: center;
+    background: #101622;
+}
+
+.contact p {
+    margin-bottom: 30px;
+    color: #c4cbd5;
+}
+
+/* PIED DE PAGE */
+
+footer {
+    background: #06090e;
+    text-align: center;
+    padding: 30px;
+    line-height: 2;
+    color: #aab2c0;
+}
+
+/* RESPONSIVE : TELEPHONES */
+
+@media screen and (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 50px 7%;
+    }
+
+    .hero h2 {
+        font-size: 42px;
+    }
+
+    .stats {
+        gap: 35px;
+    }
+
+}
+
+/* MATCH RECORD */
+
+.match-record {
+    padding: 80px 8%;
+    text-align: center;
+    background: #080b12;
+}
+
+.match-record h2 {
+    color: #168cff;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.record-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.record-card {
+    width: 220px;
+    padding: 30px;
+    border-radius: 12px;
+}
+
+.record-card h3 {
+    font-size: 18px;
+}
+
+.record-card p {
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.victory {
+    background: #123c2c;
+    color: #4ade80;
+}
+
+.defeat {
+    background: #481d29;
+    color: #fb7185;
+}
+
+.history-title {
+    margin-top: 60px;
+}
+
+table {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    border-collapse: collapse;
+    background: #101622;
+}
+
+th, td {
+    padding: 18px;
+    border-bottom: 1px solid #263b57;
+}
+
+th {
+    color: #168cff;
+}
+
+.win {
+    color: #4ade80;
+    font-weight: bold;
+}
+
+.lose {
+    color: #fb7185;
+    font-weight: bold;
+}
+
+/* PHOTOS DES JOUEURS */
+
+.player-photo {
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #168cff;
+
+    margin-bottom: 20px;
+
+    transition: 0.3s;
+}
+
+.player-card:hover .player-photo {
+    transform: scale(1.08);
+
+    box-shadow: 0 0 20px #168cff;
+}
+
