@@ -348,7 +348,7 @@ th {
 
     object-fit: cover;
 
-    border-radius: 50%;
+    border-radius: 70px;
 
     border: 3px solid #168cff;
 
@@ -363,3 +363,38 @@ th {
     box-shadow: 0 0 20px #168cff;
 }
 
+/* LOGO TEAM LIQUID */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 55px;
+    height: 55px;
+    object-fit: contain;
+}
+
+.logo h1 {
+    font-size: 25px;
+    color: white;
+}
+
+.logo span {
+    color: #168cff;
+}
+.players-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.player-card {
+    width: 200px;
+    padding: 20px;
+    text-align: center;
+}
